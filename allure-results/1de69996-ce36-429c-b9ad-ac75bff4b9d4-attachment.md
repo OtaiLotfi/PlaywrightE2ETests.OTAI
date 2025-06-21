@@ -1,0 +1,554 @@
+# Page snapshot
+
+```yaml
+- button "Skip to content"
+- banner:
+  - button "Close menu"
+  - heading "Invoices" [level=6]
+  - img
+  - button "English"
+  - button "Change Theme"
+  - button "Toggle light/dark mode"
+  - button "Refresh"
+  - button "Profile":
+    - img "Jane Doe"
+    - text: Jane Doe
+- main:
+  - menuitem "Dashboard"
+  - menuitem "Sales":
+    - paragraph: Sales
+  - menuitem "Orders"
+  - menuitem "Invoices"
+  - menuitem "Catalog":
+    - paragraph: Catalog
+  - menuitem "Posters"
+  - menuitem "Categories"
+  - menuitem "Customers":
+    - paragraph: Customers
+  - menuitem "Customers"
+  - menuitem "Segments"
+  - menuitem "Reviews"
+  - text: Passed Since
+  - textbox "Passed Since"
+  - text: Passed Before
+  - textbox "Passed Before"
+  - button "Add filter"
+  - button "Columns"
+  - button "Export"
+  - button "Unselect"
+  - heading "0 items selected" [level=6]
+  - button "Delete"
+  - table:
+    - rowgroup:
+      - row "Select all Sort by id ascending Sort by invoice date ascending Sort by customer ascending Sort by address ascending Sort by order ascending Sort by total ex taxes ascending Sort by delivery fees ascending Sort by taxes ascending Sort by total ascending":
+        - columnheader
+        - columnheader "Select all":
+          - checkbox "Select all"
+        - columnheader "Sort by id ascending":
+          - button "Sort by id ascending": Id
+        - columnheader "Sort by invoice date ascending":
+          - button "Sort by invoice date ascending": Invoice date
+        - columnheader "Sort by customer ascending":
+          - button "Sort by customer ascending": Customer
+        - columnheader "Sort by address ascending":
+          - button "Sort by address ascending": Address
+        - columnheader "Sort by order ascending":
+          - button "Sort by order ascending": Order
+        - columnheader "Sort by total ex taxes ascending":
+          - button "Sort by total ex taxes ascending": Total ex taxes
+        - columnheader "Sort by delivery fees ascending":
+          - button "Sort by delivery fees ascending": Delivery fees
+        - columnheader "Sort by taxes ascending":
+          - button "Sort by taxes ascending": Taxes
+        - columnheader "Sort by total ascending":
+          - button "Sort by total ascending": Total
+    - rowgroup:
+      - row "Select this row 94 6/19/2025 Zella Bernhard Zella Bernhard 619 Wintheiser Hills, Turnerberg, NY 38907 4Y7T0O 66.58 5.3 14.38 86.26":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "94"
+        - cell "6/19/2025"
+        - cell "Zella Bernhard Zella Bernhard":
+          - link "Zella Bernhard Zella Bernhard":
+            - /url: "#/customers/680"
+            - img "Zella Bernhard"
+            - text: Zella Bernhard
+        - cell "619 Wintheiser Hills, Turnerberg, NY 38907"
+        - cell "4Y7T0O":
+          - link "4Y7T0O":
+            - /url: "#/orders/228"
+        - cell "66.58"
+        - cell "5.3"
+        - cell "14.38"
+        - cell "86.26"
+      - row "Select this row 93 6/18/2025 C Chad Moore 46442 Lesch Cliffs, Oralside, WI 82255-5952 AF7KBY 16.77 6.64 4.68 28.09":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "93"
+        - cell "6/18/2025"
+        - cell "C Chad Moore":
+          - link "C Chad Moore":
+            - /url: "#/customers/894"
+        - cell "46442 Lesch Cliffs, Oralside, WI 82255-5952"
+        - cell "AF7KBY":
+          - link "AF7KBY":
+            - /url: "#/orders/559"
+        - cell "16.77"
+        - cell "6.64"
+        - cell "4.68"
+        - cell "28.09"
+      - row "Select this row 92 6/17/2025 Zella Bernhard Zella Bernhard 619 Wintheiser Hills, Turnerberg, NY 38907 DGTDTG 24.06 5.19 5.85 35.1":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "92"
+        - cell "6/17/2025"
+        - cell "Zella Bernhard Zella Bernhard":
+          - link "Zella Bernhard Zella Bernhard":
+            - /url: "#/customers/680"
+            - img "Zella Bernhard"
+            - text: Zella Bernhard
+        - cell "619 Wintheiser Hills, Turnerberg, NY 38907"
+        - cell "DGTDTG":
+          - link "DGTDTG":
+            - /url: "#/orders/373"
+        - cell "24.06"
+        - cell "5.19"
+        - cell "5.85"
+        - cell "35.1"
+      - row "Select this row 91 6/17/2025 Keegan Kulas Keegan Kulas 2933 Laron Prairie, Abigayleland, AR 75019-1754 RO8NUG 159 5.85 28.02 192.87":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "91"
+        - cell "6/17/2025"
+        - cell "Keegan Kulas Keegan Kulas":
+          - link "Keegan Kulas Keegan Kulas":
+            - /url: "#/customers/143"
+            - img "Keegan Kulas"
+            - text: Keegan Kulas
+        - cell "2933 Laron Prairie, Abigayleland, AR 75019-1754"
+        - cell "RO8NUG":
+          - link "RO8NUG":
+            - /url: "#/orders/450"
+        - cell "159"
+        - cell "5.85"
+        - cell "28.02"
+        - cell "192.87"
+      - row "Select this row 90 6/16/2025 Jake Adams Jake Adams 70167 Toy Plaza, East Lafayettechester, IA 26027-6773 3PRZ0T 54.95 6.47 7.37 68.79":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "90"
+        - cell "6/16/2025"
+        - cell "Jake Adams Jake Adams":
+          - link "Jake Adams Jake Adams":
+            - /url: "#/customers/803"
+            - img "Jake Adams"
+            - text: Jake Adams
+        - cell "70167 Toy Plaza, East Lafayettechester, IA 26027-6773"
+        - cell "3PRZ0T":
+          - link "3PRZ0T":
+            - /url: "#/orders/389"
+        - cell "54.95"
+        - cell "6.47"
+        - cell "7.37"
+        - cell "68.79"
+      - row "Select this row 89 6/14/2025 Sydney Murphy Sydney Murphy 0645 Jevon Plains, Port Simoneborough, NJ 25693 8HYCLH 136.43 5.77 24.17 166.37":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "89"
+        - cell "6/14/2025"
+        - cell "Sydney Murphy Sydney Murphy":
+          - link "Sydney Murphy Sydney Murphy":
+            - /url: "#/customers/630"
+            - img "Sydney Murphy"
+            - text: Sydney Murphy
+        - cell "0645 Jevon Plains, Port Simoneborough, NJ 25693"
+        - cell "8HYCLH":
+          - link "8HYCLH":
+            - /url: "#/orders/290"
+        - cell "136.43"
+        - cell "5.77"
+        - cell "24.17"
+        - cell "166.37"
+      - row "Select this row 88 6/13/2025 Alexandro Heidenreich Alexandro Heidenreich 02794 Considine Dale, Lake Clarissachester, PA 58188-3897 F335MZ 87 5.22 18.44 110.66":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "88"
+        - cell "6/13/2025"
+        - cell "Alexandro Heidenreich Alexandro Heidenreich":
+          - link "Alexandro Heidenreich Alexandro Heidenreich":
+            - /url: "#/customers/732"
+            - img "Alexandro Heidenreich"
+            - text: Alexandro Heidenreich
+        - cell "02794 Considine Dale, Lake Clarissachester, PA 58188-3897"
+        - cell "F335MZ":
+          - link "F335MZ":
+            - /url: "#/orders/374"
+        - cell "87"
+        - cell "5.22"
+        - cell "18.44"
+        - cell "110.66"
+      - row "Select this row 87 6/11/2025 Gilberto Dietrich Gilberto Dietrich 22496 Gillian Islands, South Cortneyhaven, OH 88363-6991 V6MD87 112.5 6.23 23.75 142.48":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "87"
+        - cell "6/11/2025"
+        - cell "Gilberto Dietrich Gilberto Dietrich":
+          - link "Gilberto Dietrich Gilberto Dietrich":
+            - /url: "#/customers/717"
+            - img "Gilberto Dietrich"
+            - text: Gilberto Dietrich
+        - cell "22496 Gillian Islands, South Cortneyhaven, OH 88363-6991"
+        - cell "V6MD87":
+          - link "V6MD87":
+            - /url: "#/orders/116"
+        - cell "112.5"
+        - cell "6.23"
+        - cell "23.75"
+        - cell "142.48"
+      - row "Select this row 86 6/8/2025 C Chad Moore 46442 Lesch Cliffs, Oralside, WI 82255-5952 DEO9EZ 887.07 3.53 178.12 1,068.72":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "86"
+        - cell "6/8/2025"
+        - cell "C Chad Moore":
+          - link "C Chad Moore":
+            - /url: "#/customers/894"
+        - cell "46442 Lesch Cliffs, Oralside, WI 82255-5952"
+        - cell "DEO9EZ":
+          - link "DEO9EZ":
+            - /url: "#/orders/422"
+        - cell "887.07"
+        - cell "3.53"
+        - cell "178.12"
+        - cell "1,068.72"
+      - row "Select this row 85 6/8/2025 Tommie Schuppe Tommie Schuppe 3449 Howard Pines, Eveview, KY 39674 BUMZ9K 120.68 4.12 14.98 139.78":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "85"
+        - cell "6/8/2025"
+        - cell "Tommie Schuppe Tommie Schuppe":
+          - link "Tommie Schuppe Tommie Schuppe":
+            - /url: "#/customers/324"
+            - img "Tommie Schuppe"
+            - text: Tommie Schuppe
+        - cell "3449 Howard Pines, Eveview, KY 39674"
+        - cell "BUMZ9K":
+          - link "BUMZ9K":
+            - /url: "#/orders/175"
+        - cell "120.68"
+        - cell "4.12"
+        - cell "14.98"
+        - cell "139.78"
+      - row "Select this row 84 6/7/2025 Sydney Murphy Sydney Murphy 0645 Jevon Plains, Port Simoneborough, NJ 25693 NCQD7L 64.39 6.98 8.56 79.93":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "84"
+        - cell "6/7/2025"
+        - cell "Sydney Murphy Sydney Murphy":
+          - link "Sydney Murphy Sydney Murphy":
+            - /url: "#/customers/630"
+            - img "Sydney Murphy"
+            - text: Sydney Murphy
+        - cell "0645 Jevon Plains, Port Simoneborough, NJ 25693"
+        - cell "NCQD7L":
+          - link "NCQD7L":
+            - /url: "#/orders/306"
+        - cell "64.39"
+        - cell "6.98"
+        - cell "8.56"
+        - cell "79.93"
+      - row "Select this row 83 6/5/2025 Urban Schamberger Urban Schamberger 00389 Dortha Ridge, Mertztown, OK 21073-1857 O6E7HA 30.12 6.41 7.31 43.84":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "83"
+        - cell "6/5/2025"
+        - cell "Urban Schamberger Urban Schamberger":
+          - link "Urban Schamberger Urban Schamberger":
+            - /url: "#/customers/30"
+            - img "Urban Schamberger"
+            - text: Urban Schamberger
+        - cell "00389 Dortha Ridge, Mertztown, OK 21073-1857"
+        - cell "O6E7HA":
+          - link "O6E7HA":
+            - /url: "#/orders/94"
+        - cell "30.12"
+        - cell "6.41"
+        - cell "7.31"
+        - cell "43.84"
+      - row "Select this row 82 6/5/2025 Gilberto Dietrich Gilberto Dietrich 22496 Gillian Islands, South Cortneyhaven, OH 88363-6991 S1537A 27.86 4.72 5.54 38.12":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "82"
+        - cell "6/5/2025"
+        - cell "Gilberto Dietrich Gilberto Dietrich":
+          - link "Gilberto Dietrich Gilberto Dietrich":
+            - /url: "#/customers/717"
+            - img "Gilberto Dietrich"
+            - text: Gilberto Dietrich
+        - cell "22496 Gillian Islands, South Cortneyhaven, OH 88363-6991"
+        - cell "S1537A":
+          - link "S1537A":
+            - /url: "#/orders/420"
+        - cell "27.86"
+        - cell "4.72"
+        - cell "5.54"
+        - cell "38.12"
+      - row "Select this row 81 6/4/2025 Sydney Murphy Sydney Murphy 0645 Jevon Plains, Port Simoneborough, NJ 25693 9IT5WO 285.59 5.16 34.89 325.64":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "81"
+        - cell "6/4/2025"
+        - cell "Sydney Murphy Sydney Murphy":
+          - link "Sydney Murphy Sydney Murphy":
+            - /url: "#/customers/630"
+            - img "Sydney Murphy"
+            - text: Sydney Murphy
+        - cell "0645 Jevon Plains, Port Simoneborough, NJ 25693"
+        - cell "9IT5WO":
+          - link "9IT5WO":
+            - /url: "#/orders/259"
+        - cell "285.59"
+        - cell "5.16"
+        - cell "34.89"
+        - cell "325.64"
+      - row "Select this row 80 6/3/2025 Annie Breitenberg Annie Breitenberg 8307 Hartmann Avenue, Gutmannport, TX 63070-7815 OS6O9O 42.27 7.9 6.02 56.19":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "80"
+        - cell "6/3/2025"
+        - cell "Annie Breitenberg Annie Breitenberg":
+          - link "Annie Breitenberg Annie Breitenberg":
+            - /url: "#/customers/31"
+            - img "Annie Breitenberg"
+            - text: Annie Breitenberg
+        - cell "8307 Hartmann Avenue, Gutmannport, TX 63070-7815"
+        - cell "OS6O9O":
+          - link "OS6O9O":
+            - /url: "#/orders/287"
+        - cell "42.27"
+        - cell "7.9"
+        - cell "6.02"
+        - cell "56.19"
+      - row "Select this row 79 6/2/2025 Tommie Schuppe Tommie Schuppe 3449 Howard Pines, Eveview, KY 39674 KVS735 106.5 3.15 18.64 128.29":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "79"
+        - cell "6/2/2025"
+        - cell "Tommie Schuppe Tommie Schuppe":
+          - link "Tommie Schuppe Tommie Schuppe":
+            - /url: "#/customers/324"
+            - img "Tommie Schuppe"
+            - text: Tommie Schuppe
+        - cell "3449 Howard Pines, Eveview, KY 39674"
+        - cell "KVS735":
+          - link "KVS735":
+            - /url: "#/orders/136"
+        - cell "106.5"
+        - cell "3.15"
+        - cell "18.64"
+        - cell "128.29"
+      - row "Select this row 78 6/2/2025 Lola Renner Lola Renner 96522 Prohaska Place, North Foster, WI 35364 YG5CNT 178.41 6.93 37.07 222.41":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "78"
+        - cell "6/2/2025"
+        - cell "Lola Renner Lola Renner":
+          - link "Lola Renner Lola Renner":
+            - /url: "#/customers/841"
+            - img "Lola Renner"
+            - text: Lola Renner
+        - cell "96522 Prohaska Place, North Foster, WI 35364"
+        - cell "YG5CNT":
+          - link "YG5CNT":
+            - /url: "#/orders/399"
+        - cell "178.41"
+        - cell "6.93"
+        - cell "37.07"
+        - cell "222.41"
+      - row "Select this row 77 6/1/2025 Brendan Wuckert Brendan Wuckert 218 Satterfield Parkways, Port Mabelle, HI 57633-7470 R1P5CK 20.39 3.2 4.01 27.6":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "77"
+        - cell "6/1/2025"
+        - cell "Brendan Wuckert Brendan Wuckert":
+          - link "Brendan Wuckert Brendan Wuckert":
+            - /url: "#/customers/44"
+            - img "Brendan Wuckert"
+            - text: Brendan Wuckert
+        - cell "218 Satterfield Parkways, Port Mabelle, HI 57633-7470"
+        - cell "R1P5CK":
+          - link "R1P5CK":
+            - /url: "#/orders/500"
+        - cell "20.39"
+        - cell "3.2"
+        - cell "4.01"
+        - cell "27.6"
+      - row "Select this row 76 6/1/2025 Brendan Wuckert Brendan Wuckert 218 Satterfield Parkways, Port Mabelle, HI 57633-7470 AQ3CBE 57.01 7.55 7.75 72.31":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "76"
+        - cell "6/1/2025"
+        - cell "Brendan Wuckert Brendan Wuckert":
+          - link "Brendan Wuckert Brendan Wuckert":
+            - /url: "#/customers/44"
+            - img "Brendan Wuckert"
+            - text: Brendan Wuckert
+        - cell "218 Satterfield Parkways, Port Mabelle, HI 57633-7470"
+        - cell "AQ3CBE":
+          - link "AQ3CBE":
+            - /url: "#/orders/589"
+        - cell "57.01"
+        - cell "7.55"
+        - cell "7.75"
+        - cell "72.31"
+      - row "Select this row 75 6/1/2025 Brendan Wuckert Brendan Wuckert 218 Satterfield Parkways, Port Mabelle, HI 57633-7470 QQON3B 216.78 6.88 38.02 261.68":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "75"
+        - cell "6/1/2025"
+        - cell "Brendan Wuckert Brendan Wuckert":
+          - link "Brendan Wuckert Brendan Wuckert":
+            - /url: "#/customers/44"
+            - img "Brendan Wuckert"
+            - text: Brendan Wuckert
+        - cell "218 Satterfield Parkways, Port Mabelle, HI 57633-7470"
+        - cell "QQON3B":
+          - link "QQON3B":
+            - /url: "#/orders/584"
+        - cell "216.78"
+        - cell "6.88"
+        - cell "38.02"
+        - cell "261.68"
+      - row "Select this row 74 5/31/2025 Nova Sporer Nova Sporer 305 Santina Meadow, West Anastasia, MS 61822-7294 81HD41 53.12 6.98 10.22 70.32":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "74"
+        - cell "5/31/2025"
+        - cell "Nova Sporer Nova Sporer":
+          - link "Nova Sporer Nova Sporer":
+            - /url: "#/customers/317"
+            - img "Nova Sporer"
+            - text: Nova Sporer
+        - cell "305 Santina Meadow, West Anastasia, MS 61822-7294"
+        - cell "81HD41":
+          - link "81HD41":
+            - /url: "#/orders/525"
+        - cell "53.12"
+        - cell "6.98"
+        - cell "10.22"
+        - cell "70.32"
+      - row "Select this row 73 5/31/2025 Richmond Bode Richmond Bode 2862 Reynolds Keys, Hymanbury, OH 50328-4664 HCO4F8 84.54 6.62 10.94 102.1":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "73"
+        - cell "5/31/2025"
+        - cell "Richmond Bode Richmond Bode":
+          - link "Richmond Bode Richmond Bode":
+            - /url: "#/customers/101"
+            - img "Richmond Bode"
+            - text: Richmond Bode
+        - cell "2862 Reynolds Keys, Hymanbury, OH 50328-4664"
+        - cell "HCO4F8":
+          - link "HCO4F8":
+            - /url: "#/orders/551"
+        - cell "84.54"
+        - cell "6.62"
+        - cell "10.94"
+        - cell "102.1"
+      - row "Select this row 72 5/30/2025 Brendan Wuckert Brendan Wuckert 218 Satterfield Parkways, Port Mabelle, HI 57633-7470 FDVJLT 24.02 5.41 3.53 32.96":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "72"
+        - cell "5/30/2025"
+        - cell "Brendan Wuckert Brendan Wuckert":
+          - link "Brendan Wuckert Brendan Wuckert":
+            - /url: "#/customers/44"
+            - img "Brendan Wuckert"
+            - text: Brendan Wuckert
+        - cell "218 Satterfield Parkways, Port Mabelle, HI 57633-7470"
+        - cell "FDVJLT":
+          - link "FDVJLT":
+            - /url: "#/orders/352"
+        - cell "24.02"
+        - cell "5.41"
+        - cell "3.53"
+        - cell "32.96"
+      - row "Select this row 71 5/29/2025 Ray Murray Ray Murray 1952 Joanny Shore, Port Justusview, NY 79579 MKZG27 55.2 4.88 12.02 72.1":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "71"
+        - cell "5/29/2025"
+        - cell "Ray Murray Ray Murray":
+          - link "Ray Murray Ray Murray":
+            - /url: "#/customers/747"
+            - img "Ray Murray"
+            - text: Ray Murray
+        - cell "1952 Joanny Shore, Port Justusview, NY 79579"
+        - cell "MKZG27":
+          - link "MKZG27":
+            - /url: "#/orders/566"
+        - cell "55.2"
+        - cell "4.88"
+        - cell "12.02"
+        - cell "72.1"
+      - row "Select this row 70 5/27/2025 Tabitha Davis Tabitha Davis 288 Waelchi Mount, Bessiehaven, WA 56517 65V2E6 60.56 6.39 13.39 80.34":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "70"
+        - cell "5/27/2025"
+        - cell "Tabitha Davis Tabitha Davis":
+          - link "Tabitha Davis Tabitha Davis":
+            - /url: "#/customers/75"
+            - img "Tabitha Davis"
+            - text: Tabitha Davis
+        - cell "288 Waelchi Mount, Bessiehaven, WA 56517"
+        - cell "65V2E6":
+          - link "65V2E6":
+            - /url: "#/orders/119"
+        - cell "60.56"
+        - cell "6.39"
+        - cell "13.39"
+        - cell "80.34"
+  - paragraph: "Rows per page:"
+  - 'combobox "Rows per page: 25"': "25"
+  - paragraph: 1-25 of 95
+  - navigation "pagination navigation":
+    - list:
+      - listitem:
+        - button "Go to previous page" [disabled]
+      - listitem:
+        - button "Page 1": "1"
+      - listitem:
+        - button "Go to page 2": "2"
+      - listitem:
+        - button "Go to page 3": "3"
+      - listitem:
+        - button "Go to page 4": "4"
+      - listitem:
+        - button "Go to next page"
+```
