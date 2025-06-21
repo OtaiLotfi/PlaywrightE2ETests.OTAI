@@ -1,3 +1,3 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","15379","Invoices page is visible","","Fri Jun 20 19:39:32 GMT+01:00 2025","passed","Fri Jun 20 19:39:48 GMT+01:00 2025","","invoices.spec.ts","",""
-"","15364","check Otai brand page title","","Fri Jun 20 19:39:32 GMT+01:00 2025","passed","Fri Jun 20 19:39:48 GMT+01:00 2025","","example.spec.ts","",""
+"","16660","Invoices page is visible","","Fri Jun 20 21:00:10 GMT+01:00 2025","passed","Fri Jun 20 21:00:27 GMT+01:00 2025","","invoices.spec.ts","",""
+"","16664","check Otai brand page title","","Fri Jun 20 21:00:10 GMT+01:00 2025","passed","Fri Jun 20 21:00:27 GMT+01:00 2025","","example.spec.ts","",""

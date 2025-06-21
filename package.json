@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "playwright test"
   },
   "keywords": [],
   "author": "",
@@ -13,8 +13,7 @@
     "allure-playwright": "^3.3.0"
   },
   "dependencies": {
-    "playwright": "^1.53.1",
-    "playwright-core": "^1.53.1"
+    "playwright": "^1.53.1"
   },
   "description": ""
 }
