@@ -1,0 +1,558 @@
+# Page snapshot
+
+```yaml
+- button "Skip to content"
+- banner:
+  - button "Close menu"
+  - heading "Invoices" [level=6]
+  - img
+  - button "English"
+  - button "Change Theme"
+  - button "Toggle light/dark mode"
+  - button "Refresh"
+  - button "Profile":
+    - img "Jane Doe"
+    - text: Jane Doe
+- main:
+  - menuitem "Dashboard"
+  - menuitem "Sales":
+    - paragraph: Sales
+  - menuitem "Orders"
+  - menuitem "Invoices"
+  - menuitem "Catalog":
+    - paragraph: Catalog
+  - menuitem "Posters"
+  - menuitem "Categories"
+  - menuitem "Customers":
+    - paragraph: Customers
+  - menuitem "Customers"
+  - menuitem "Segments"
+  - menuitem "Reviews"
+  - text: Passed Since
+  - textbox "Passed Since"
+  - text: Passed Before
+  - textbox "Passed Before"
+  - button "Add filter"
+  - button "Columns"
+  - button "Export"
+  - button "Unselect"
+  - heading "0 items selected" [level=6]
+  - button "Delete"
+  - table:
+    - rowgroup:
+      - row "Select all Sort by id ascending Sort by invoice date ascending Sort by customer ascending Sort by address ascending Sort by order ascending Sort by total ex taxes ascending Sort by delivery fees ascending Sort by taxes ascending Sort by total ascending":
+        - columnheader
+        - columnheader "Select all":
+          - checkbox "Select all"
+        - columnheader "Sort by id ascending":
+          - button "Sort by id ascending": Id
+        - columnheader "Sort by invoice date ascending":
+          - button "Sort by invoice date ascending": Invoice date
+        - columnheader "Sort by customer ascending":
+          - button "Sort by customer ascending": Customer
+        - columnheader "Sort by address ascending":
+          - button "Sort by address ascending": Address
+        - columnheader "Sort by order ascending":
+          - button "Sort by order ascending": Order
+        - columnheader "Sort by total ex taxes ascending":
+          - button "Sort by total ex taxes ascending": Total ex taxes
+        - columnheader "Sort by delivery fees ascending":
+          - button "Sort by delivery fees ascending": Delivery fees
+        - columnheader "Sort by taxes ascending":
+          - button "Sort by taxes ascending": Taxes
+        - columnheader "Sort by total ascending":
+          - button "Sort by total ascending": Total
+    - rowgroup:
+      - row "Select this row 75 6/21/2025 Everett O'Connell Everett O'Connell 8604 Walker Fields, Kertzmannmouth, DE 13588-0695 RE3G0P 355.58 4.05 71.93 431.56":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "75"
+        - cell "6/21/2025"
+        - cell "Everett O'Connell Everett O'Connell":
+          - link "Everett O'Connell Everett O'Connell":
+            - /url: "#/customers/766"
+            - img "Everett O'Connell"
+            - text: Everett O'Connell
+        - cell "8604 Walker Fields, Kertzmannmouth, DE 13588-0695"
+        - cell "RE3G0P":
+          - link "RE3G0P":
+            - /url: "#/orders/211"
+        - cell "355.58"
+        - cell "4.05"
+        - cell "71.93"
+        - cell "431.56"
+      - row "Select this row 74 6/21/2025 Everett O'Connell Everett O'Connell 8604 Walker Fields, Kertzmannmouth, DE 13588-0695 DJ91BQ 196.51 5.76 34.39 236.66":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "74"
+        - cell "6/21/2025"
+        - cell "Everett O'Connell Everett O'Connell":
+          - link "Everett O'Connell Everett O'Connell":
+            - /url: "#/customers/766"
+            - img "Everett O'Connell"
+            - text: Everett O'Connell
+        - cell "8604 Walker Fields, Kertzmannmouth, DE 13588-0695"
+        - cell "DJ91BQ":
+          - link "DJ91BQ":
+            - /url: "#/orders/386"
+        - cell "196.51"
+        - cell "5.76"
+        - cell "34.39"
+        - cell "236.66"
+      - row "Select this row 73 6/20/2025 Cooper Sporer Cooper Sporer 62981 Senger Fort, West Yasminefurt, TX 72452-0936 OO4IKF 55.89 7.81 7.64 71.34":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "73"
+        - cell "6/20/2025"
+        - cell "Cooper Sporer Cooper Sporer":
+          - link "Cooper Sporer Cooper Sporer":
+            - /url: "#/customers/577"
+            - img "Cooper Sporer"
+            - text: Cooper Sporer
+        - cell "62981 Senger Fort, West Yasminefurt, TX 72452-0936"
+        - cell "OO4IKF":
+          - link "OO4IKF":
+            - /url: "#/orders/73"
+        - cell "55.89"
+        - cell "7.81"
+        - cell "7.64"
+        - cell "71.34"
+      - row "Select this row 72 6/20/2025 Cooper Sporer Cooper Sporer 62981 Senger Fort, West Yasminefurt, TX 72452-0936 3INKMO 64.41 7.67 12.25 84.33":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "72"
+        - cell "6/20/2025"
+        - cell "Cooper Sporer Cooper Sporer":
+          - link "Cooper Sporer Cooper Sporer":
+            - /url: "#/customers/577"
+            - img "Cooper Sporer"
+            - text: Cooper Sporer
+        - cell "62981 Senger Fort, West Yasminefurt, TX 72452-0936"
+        - cell "3INKMO":
+          - link "3INKMO":
+            - /url: "#/orders/121"
+        - cell "64.41"
+        - cell "7.67"
+        - cell "12.25"
+        - cell "84.33"
+      - row "Select this row 71 6/19/2025 Mckenna Kilback Mckenna Kilback 019 Krajcik Loaf, Hyatttown, TN 11646-4219 6F7WOX 235.55 7.58 41.33 284.46":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "71"
+        - cell "6/19/2025"
+        - cell "Mckenna Kilback Mckenna Kilback":
+          - link "Mckenna Kilback Mckenna Kilback":
+            - /url: "#/customers/612"
+            - img "Mckenna Kilback"
+            - text: Mckenna Kilback
+        - cell "019 Krajcik Loaf, Hyatttown, TN 11646-4219"
+        - cell "6F7WOX":
+          - link "6F7WOX":
+            - /url: "#/orders/227"
+        - cell "235.55"
+        - cell "7.58"
+        - cell "41.33"
+        - cell "284.46"
+      - row "Select this row 70 6/19/2025 Mckenna Kilback Mckenna Kilback 019 Krajcik Loaf, Hyatttown, TN 11646-4219 KVP0V4 110.39 5.76 13.94 130.09":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "70"
+        - cell "6/19/2025"
+        - cell "Mckenna Kilback Mckenna Kilback":
+          - link "Mckenna Kilback Mckenna Kilback":
+            - /url: "#/customers/612"
+            - img "Mckenna Kilback"
+            - text: Mckenna Kilback
+        - cell "019 Krajcik Loaf, Hyatttown, TN 11646-4219"
+        - cell "KVP0V4":
+          - link "KVP0V4":
+            - /url: "#/orders/547"
+        - cell "110.39"
+        - cell "5.76"
+        - cell "13.94"
+        - cell "130.09"
+      - row "Select this row 69 6/19/2025 Cooper Sporer Cooper Sporer 62981 Senger Fort, West Yasminefurt, TX 72452-0936 B52NO4 87.8 3.14 10.91 101.85":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "69"
+        - cell "6/19/2025"
+        - cell "Cooper Sporer Cooper Sporer":
+          - link "Cooper Sporer Cooper Sporer":
+            - /url: "#/customers/577"
+            - img "Cooper Sporer"
+            - text: Cooper Sporer
+        - cell "62981 Senger Fort, West Yasminefurt, TX 72452-0936"
+        - cell "B52NO4":
+          - link "B52NO4":
+            - /url: "#/orders/459"
+        - cell "87.8"
+        - cell "3.14"
+        - cell "10.91"
+        - cell "101.85"
+      - row "Select this row 68 6/16/2025 Jett Mertz Jett Mertz 32019 Wiza Estates, Kalliehaven, ND 78551-9731 NJ6TDV 130.1 7.41 16.5 154.01":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "68"
+        - cell "6/16/2025"
+        - cell "Jett Mertz Jett Mertz":
+          - link "Jett Mertz Jett Mertz":
+            - /url: "#/customers/580"
+            - img "Jett Mertz"
+            - text: Jett Mertz
+        - cell "32019 Wiza Estates, Kalliehaven, ND 78551-9731"
+        - cell "NJ6TDV":
+          - link "NJ6TDV":
+            - /url: "#/orders/278"
+        - cell "130.1"
+        - cell "7.41"
+        - cell "16.5"
+        - cell "154.01"
+      - row "Select this row 67 6/16/2025 Jett Mertz Jett Mertz 32019 Wiza Estates, Kalliehaven, ND 78551-9731 KIG8HS 46.3 4.81 6.13 57.24":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "67"
+        - cell "6/16/2025"
+        - cell "Jett Mertz Jett Mertz":
+          - link "Jett Mertz Jett Mertz":
+            - /url: "#/customers/580"
+            - img "Jett Mertz"
+            - text: Jett Mertz
+        - cell "32019 Wiza Estates, Kalliehaven, ND 78551-9731"
+        - cell "KIG8HS":
+          - link "KIG8HS":
+            - /url: "#/orders/381"
+        - cell "46.3"
+        - cell "4.81"
+        - cell "6.13"
+        - cell "57.24"
+      - row "Select this row 66 6/16/2025 Shanel Homenick Shanel Homenick 60752 Kilback Corners, Masonview, WA 00247-8898 6FQQ2A 56.78 3.85 12.13 72.76":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "66"
+        - cell "6/16/2025"
+        - cell "Shanel Homenick Shanel Homenick":
+          - link "Shanel Homenick Shanel Homenick":
+            - /url: "#/customers/34"
+            - img "Shanel Homenick"
+            - text: Shanel Homenick
+        - cell "60752 Kilback Corners, Masonview, WA 00247-8898"
+        - cell "6FQQ2A":
+          - link "6FQQ2A":
+            - /url: "#/orders/431"
+        - cell "56.78"
+        - cell "3.85"
+        - cell "12.13"
+        - cell "72.76"
+      - row "Select this row 65 6/14/2025 Kade Fadel Kade Fadel 0276 Thompson Junction, Alexandrahaven, NE 07194-5447 TAVWI0 101.75 4 17.98 123.73":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "65"
+        - cell "6/14/2025"
+        - cell "Kade Fadel Kade Fadel":
+          - link "Kade Fadel Kade Fadel":
+            - /url: "#/customers/51"
+            - img "Kade Fadel"
+            - text: Kade Fadel
+        - cell "0276 Thompson Junction, Alexandrahaven, NE 07194-5447"
+        - cell "TAVWI0":
+          - link "TAVWI0":
+            - /url: "#/orders/12"
+        - cell "101.75"
+        - cell "4"
+        - cell "17.98"
+        - cell "123.73"
+      - row "Select this row 64 6/14/2025 Kade Fadel Kade Fadel 0276 Thompson Junction, Alexandrahaven, NE 07194-5447 I0Q7WC 116.65 7.98 24.93 149.56":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "64"
+        - cell "6/14/2025"
+        - cell "Kade Fadel Kade Fadel":
+          - link "Kade Fadel Kade Fadel":
+            - /url: "#/customers/51"
+            - img "Kade Fadel"
+            - text: Kade Fadel
+        - cell "0276 Thompson Junction, Alexandrahaven, NE 07194-5447"
+        - cell "I0Q7WC":
+          - link "I0Q7WC":
+            - /url: "#/orders/261"
+        - cell "116.65"
+        - cell "7.98"
+        - cell "24.93"
+        - cell "149.56"
+      - row "Select this row 63 6/9/2025 Kade Fadel Kade Fadel 0276 Thompson Junction, Alexandrahaven, NE 07194-5447 KD1LMB 55.2 6.4 12.32 73.92":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "63"
+        - cell "6/9/2025"
+        - cell "Kade Fadel Kade Fadel":
+          - link "Kade Fadel Kade Fadel":
+            - /url: "#/customers/51"
+            - img "Kade Fadel"
+            - text: Kade Fadel
+        - cell "0276 Thompson Junction, Alexandrahaven, NE 07194-5447"
+        - cell "KD1LMB":
+          - link "KD1LMB":
+            - /url: "#/orders/589"
+        - cell "55.2"
+        - cell "6.4"
+        - cell "12.32"
+        - cell "73.92"
+      - row "Select this row 62 6/9/2025 Marta Johnston Marta Johnston 058 Lakin Greens, Lawsonview, UT 09539-5941 1F31ML 775.28 5.48 93.69 874.45":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "62"
+        - cell "6/9/2025"
+        - cell "Marta Johnston Marta Johnston":
+          - link "Marta Johnston Marta Johnston":
+            - /url: "#/customers/792"
+            - img "Marta Johnston"
+            - text: Marta Johnston
+        - cell "058 Lakin Greens, Lawsonview, UT 09539-5941"
+        - cell "1F31ML":
+          - link "1F31ML":
+            - /url: "#/orders/181"
+        - cell "775.28"
+        - cell "5.48"
+        - cell "93.69"
+        - cell "874.45"
+      - row "Select this row 61 6/8/2025 Mckenna Kilback Mckenna Kilback 019 Krajcik Loaf, Hyatttown, TN 11646-4219 652HEK 59.2 3.06 10.58 72.84":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "61"
+        - cell "6/8/2025"
+        - cell "Mckenna Kilback Mckenna Kilback":
+          - link "Mckenna Kilback Mckenna Kilback":
+            - /url: "#/customers/612"
+            - img "Mckenna Kilback"
+            - text: Mckenna Kilback
+        - cell "019 Krajcik Loaf, Hyatttown, TN 11646-4219"
+        - cell "652HEK":
+          - link "652HEK":
+            - /url: "#/orders/276"
+        - cell "59.2"
+        - cell "3.06"
+        - cell "10.58"
+        - cell "72.84"
+      - row "Select this row 60 6/8/2025 Crawford Turcotte Crawford Turcotte 394 Terry Skyway, Eloisefort, AZ 92192-9095 QW4K7R 22.9 6.33 3.51 32.74":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "60"
+        - cell "6/8/2025"
+        - cell "Crawford Turcotte Crawford Turcotte":
+          - link "Crawford Turcotte Crawford Turcotte":
+            - /url: "#/customers/96"
+            - img "Crawford Turcotte"
+            - text: Crawford Turcotte
+        - cell "394 Terry Skyway, Eloisefort, AZ 92192-9095"
+        - cell "QW4K7R":
+          - link "QW4K7R":
+            - /url: "#/orders/117"
+        - cell "22.9"
+        - cell "6.33"
+        - cell "3.51"
+        - cell "32.74"
+      - row "Select this row 59 6/6/2025 Crawford Turcotte Crawford Turcotte 394 Terry Skyway, Eloisefort, AZ 92192-9095 I9LQF5 34.17 3.56 4.53 42.26":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "59"
+        - cell "6/6/2025"
+        - cell "Crawford Turcotte Crawford Turcotte":
+          - link "Crawford Turcotte Crawford Turcotte":
+            - /url: "#/customers/96"
+            - img "Crawford Turcotte"
+            - text: Crawford Turcotte
+        - cell "394 Terry Skyway, Eloisefort, AZ 92192-9095"
+        - cell "I9LQF5":
+          - link "I9LQF5":
+            - /url: "#/orders/133"
+        - cell "34.17"
+        - cell "3.56"
+        - cell "4.53"
+        - cell "42.26"
+      - row "Select this row 58 6/6/2025 Elvis Dickens Elvis Dickens 3227 Noble Overpass, Dominicstad, MS 79143 2YTTLJ 117.9 6.46 21.14 145.5":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "58"
+        - cell "6/6/2025"
+        - cell "Elvis Dickens Elvis Dickens":
+          - link "Elvis Dickens Elvis Dickens":
+            - /url: "#/customers/455"
+            - img "Elvis Dickens"
+            - text: Elvis Dickens
+        - cell "3227 Noble Overpass, Dominicstad, MS 79143"
+        - cell "2YTTLJ":
+          - link "2YTTLJ":
+            - /url: "#/orders/450"
+        - cell "117.9"
+        - cell "6.46"
+        - cell "21.14"
+        - cell "145.5"
+      - row "Select this row 57 6/4/2025 Idell Erdman Idell Erdman 25361 Grady Rue, Maximillianchester, MD 18878 DF6GD2 681.82 4.67 82.38 768.87":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "57"
+        - cell "6/4/2025"
+        - cell "Idell Erdman Idell Erdman":
+          - link "Idell Erdman Idell Erdman":
+            - /url: "#/customers/284"
+            - img "Idell Erdman"
+            - text: Idell Erdman
+        - cell "25361 Grady Rue, Maximillianchester, MD 18878"
+        - cell "DF6GD2":
+          - link "DF6GD2":
+            - /url: "#/orders/309"
+        - cell "681.82"
+        - cell "4.67"
+        - cell "82.38"
+        - cell "768.87"
+      - row "Select this row 56 6/4/2025 Summer Will Summer Will 7629 Layla Loaf, Lake Hayleyland, RI 44150 D72Z94 103.34 7.05 18.77 129.16":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "56"
+        - cell "6/4/2025"
+        - cell "Summer Will Summer Will":
+          - link "Summer Will Summer Will":
+            - /url: "#/customers/513"
+            - img "Summer Will"
+            - text: Summer Will
+        - cell "7629 Layla Loaf, Lake Hayleyland, RI 44150"
+        - cell "D72Z94":
+          - link "D72Z94":
+            - /url: "#/orders/457"
+        - cell "103.34"
+        - cell "7.05"
+        - cell "18.77"
+        - cell "129.16"
+      - row "Select this row 55 6/3/2025 Novella Willms Novella Willms 53394 Fahey Club, North Shanietown, VT 98271 DF05E9 135.03 3.47 23.55 162.05":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "55"
+        - cell "6/3/2025"
+        - cell "Novella Willms Novella Willms":
+          - link "Novella Willms Novella Willms":
+            - /url: "#/customers/576"
+            - img "Novella Willms"
+            - text: Novella Willms
+        - cell "53394 Fahey Club, North Shanietown, VT 98271"
+        - cell "DF05E9":
+          - link "DF05E9":
+            - /url: "#/orders/204"
+        - cell "135.03"
+        - cell "3.47"
+        - cell "23.55"
+        - cell "162.05"
+      - row "Select this row 54 6/3/2025 Olin Stamm Olin Stamm 93441 Reggie Branch, South Alexanne, KS 09732-2613 L5D0J0 23.52 3.67 5.44 32.63":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "54"
+        - cell "6/3/2025"
+        - cell "Olin Stamm Olin Stamm":
+          - link "Olin Stamm Olin Stamm":
+            - /url: "#/customers/345"
+            - img "Olin Stamm"
+            - text: Olin Stamm
+        - cell "93441 Reggie Branch, South Alexanne, KS 09732-2613"
+        - cell "L5D0J0":
+          - link "L5D0J0":
+            - /url: "#/orders/375"
+        - cell "23.52"
+        - cell "3.67"
+        - cell "5.44"
+        - cell "32.63"
+      - row "Select this row 53 5/30/2025 Shaylee Heaney Shaylee Heaney 3710 Geovany Knolls, South Tatum, WV 82594-0861 UB03QA 23.54 4.88 5.68 34.1":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "53"
+        - cell "5/30/2025"
+        - cell "Shaylee Heaney Shaylee Heaney":
+          - link "Shaylee Heaney Shaylee Heaney":
+            - /url: "#/customers/669"
+            - img "Shaylee Heaney"
+            - text: Shaylee Heaney
+        - cell "3710 Geovany Knolls, South Tatum, WV 82594-0861"
+        - cell "UB03QA":
+          - link "UB03QA":
+            - /url: "#/orders/151"
+        - cell "23.54"
+        - cell "4.88"
+        - cell "5.68"
+        - cell "34.1"
+      - row "Select this row 52 5/29/2025 Gloria Fritsch Gloria Fritsch 2322 Edgardo Place, Westview, TN 01384 67LB28 48.76 7.3 11.21 67.27":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "52"
+        - cell "5/29/2025"
+        - cell "Gloria Fritsch Gloria Fritsch":
+          - link "Gloria Fritsch Gloria Fritsch":
+            - /url: "#/customers/856"
+            - img "Gloria Fritsch"
+            - text: Gloria Fritsch
+        - cell "2322 Edgardo Place, Westview, TN 01384"
+        - cell "67LB28":
+          - link "67LB28":
+            - /url: "#/orders/336"
+        - cell "48.76"
+        - cell "7.3"
+        - cell "11.21"
+        - cell "67.27"
+      - row "Select this row 51 5/26/2025 Ansel Grady Ansel Grady 9502 Sandrine Shoals, West Darryl, MA 86588-3144 F3WLZA 127.94 5.88 22.75 156.57":
+        - cell
+        - cell "Select this row":
+          - checkbox
+        - cell "51"
+        - cell "5/26/2025"
+        - cell "Ansel Grady Ansel Grady":
+          - link "Ansel Grady Ansel Grady":
+            - /url: "#/customers/439"
+            - img "Ansel Grady"
+            - text: Ansel Grady
+        - cell "9502 Sandrine Shoals, West Darryl, MA 86588-3144"
+        - cell "F3WLZA":
+          - link "F3WLZA":
+            - /url: "#/orders/243"
+        - cell "127.94"
+        - cell "5.88"
+        - cell "22.75"
+        - cell "156.57"
+  - paragraph: "Rows per page:"
+  - 'combobox "Rows per page: 25"': "25"
+  - paragraph: 1-25 of 76
+  - navigation "pagination navigation":
+    - list:
+      - listitem:
+        - button "Go to previous page" [disabled]
+      - listitem:
+        - button "Page 1": "1"
+      - listitem:
+        - button "Go to page 2": "2"
+      - listitem:
+        - button "Go to page 3": "3"
+      - listitem:
+        - button "Go to page 4": "4"
+      - listitem:
+        - button "Go to next page"
+```

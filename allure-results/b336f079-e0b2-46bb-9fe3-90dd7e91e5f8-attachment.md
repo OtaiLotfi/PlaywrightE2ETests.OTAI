@@ -1,0 +1,435 @@
+# Page snapshot
+
+```yaml
+- button "Skip to content"
+- banner:
+  - button "Close menu"
+  - heading "Customers" [level=6]
+  - img
+  - button "English"
+  - button "Change Theme"
+  - button "Toggle light/dark mode"
+  - button "Refresh"
+  - button "Profile":
+    - img "Jane Doe"
+    - text: Jane Doe
+- main:
+  - menuitem "Dashboard"
+  - menuitem "Sales":
+    - paragraph: Sales
+  - menuitem "Orders"
+  - menuitem "Invoices"
+  - menuitem "Catalog":
+    - paragraph: Catalog
+  - menuitem "Posters"
+  - menuitem "Categories"
+  - menuitem "Customers":
+    - paragraph: Customers
+  - menuitem "Customers"
+  - menuitem "Segments"
+  - menuitem "Reviews"
+  - link "Create":
+    - /url: "#/customers/create"
+  - button "Columns"
+  - button "Export"
+  - button "Unselect"
+  - heading "0 items selected" [level=6]
+  - button "Delete"
+  - table:
+    - rowgroup:
+      - row "Select all Sort by name ascending Sort by last seen ascending Sort by orders ascending Sort by total spent ascending Sort by latest purchase ascending Sort by news. ascending Sort by segments ascending":
+        - columnheader "Select all":
+          - checkbox "Select all"
+        - columnheader "Sort by name ascending":
+          - button "Sort by name ascending": Name
+        - columnheader "Sort by last seen ascending":
+          - button "Sort by last seen ascending": Last seen
+        - columnheader "Sort by orders ascending":
+          - button "Sort by orders ascending": Orders
+        - columnheader "Sort by total spent ascending":
+          - button "Sort by total spent ascending": Total spent
+        - columnheader "Sort by latest purchase ascending":
+          - button "Sort by latest purchase ascending": Latest purchase
+        - columnheader "Sort by news. ascending":
+          - button "Sort by news. ascending": News.
+        - columnheader "Sort by segments ascending":
+          - button "Sort by segments ascending": Segments
+    - rowgroup:
+      - row "Select this row Judson Klocko Judson Klocko 6/22/2025 2 $378.47 6/19/2025, 11:35:20 AM Reviewer":
+        - cell "Select this row":
+          - checkbox
+        - cell "Judson Klocko Judson Klocko":
+          - link "Judson Klocko Judson Klocko":
+            - /url: "#/customers/318"
+            - img "Judson Klocko"
+            - text: Judson Klocko
+        - cell "6/22/2025"
+        - cell "2"
+        - cell "$378.47"
+        - cell "6/19/2025, 11:35:20 AM"
+        - cell
+        - cell "Reviewer"
+      - row "Select this row P Pablo Kerluke 6/22/2025 0 $0.00 Regular":
+        - cell "Select this row":
+          - checkbox
+        - cell "P Pablo Kerluke":
+          - link "P Pablo Kerluke":
+            - /url: "#/customers/68"
+        - cell "6/22/2025"
+        - cell "0"
+        - cell "$0.00"
+        - cell
+        - cell
+        - cell "Regular"
+      - row "Select this row A Alphonso Von 6/21/2025 0 $0.00":
+        - cell "Select this row":
+          - checkbox
+        - cell "A Alphonso Von":
+          - link "A Alphonso Von":
+            - /url: "#/customers/404"
+        - cell "6/21/2025"
+        - cell "0"
+        - cell "$0.00"
+        - cell
+        - cell
+        - cell
+      - row "Select this row H Hipolito Schumm 6/21/2025 0 $0.00":
+        - cell "Select this row":
+          - checkbox
+        - cell "H Hipolito Schumm":
+          - link "H Hipolito Schumm":
+            - /url: "#/customers/766"
+        - cell "6/21/2025"
+        - cell "0"
+        - cell "$0.00"
+        - cell
+        - cell
+        - cell
+      - row "Select this row A Afton Koch 6/21/2025 0 $0.00":
+        - cell "Select this row":
+          - checkbox
+        - cell "A Afton Koch":
+          - link "A Afton Koch":
+            - /url: "#/customers/481"
+        - cell "6/21/2025"
+        - cell "0"
+        - cell "$0.00"
+        - cell
+        - cell
+        - cell
+      - row "Select this row Christiana Yundt Christiana Yundt 6/21/2025 3 $697.10 6/18/2025, 9:33:50 PM Returns":
+        - cell "Select this row":
+          - checkbox
+        - cell "Christiana Yundt Christiana Yundt":
+          - link "Christiana Yundt Christiana Yundt":
+            - /url: "#/customers/455"
+            - img "Christiana Yundt"
+            - text: Christiana Yundt
+        - cell "6/21/2025"
+        - cell "3"
+        - cell "$697.10"
+        - cell "6/18/2025, 9:33:50 PM"
+        - cell
+        - cell "Returns"
+      - row "Select this row Mohammad Tromp Mohammad Tromp 6/21/2025 1 $100.97 6/21/2025, 2:48:35 AM Ordered once":
+        - cell "Select this row":
+          - checkbox
+        - cell "Mohammad Tromp Mohammad Tromp":
+          - link "Mohammad Tromp Mohammad Tromp":
+            - /url: "#/customers/352"
+            - img "Mohammad Tromp"
+            - text: Mohammad Tromp
+        - cell "6/21/2025"
+        - cell "1"
+        - cell "$100.97"
+        - cell "6/21/2025, 2:48:35 AM"
+        - cell
+        - cell "Ordered once"
+      - row "Select this row L Lonie Moore 6/21/2025 0 $0.00":
+        - cell "Select this row":
+          - checkbox
+        - cell "L Lonie Moore":
+          - link "L Lonie Moore":
+            - /url: "#/customers/437"
+        - cell "6/21/2025"
+        - cell "0"
+        - cell "$0.00"
+        - cell
+        - cell
+        - cell
+      - row "Select this row J Johann Runte 6/21/2025 0 $0.00 Regular":
+        - cell "Select this row":
+          - checkbox
+        - cell "J Johann Runte":
+          - link "J Johann Runte":
+            - /url: "#/customers/14"
+        - cell "6/21/2025"
+        - cell "0"
+        - cell "$0.00"
+        - cell
+        - cell
+        - cell "Regular"
+      - row "Select this row B Beaulah Anderson 6/21/2025 0 $0.00":
+        - cell "Select this row":
+          - checkbox
+        - cell "B Beaulah Anderson":
+          - link "B Beaulah Anderson":
+            - /url: "#/customers/27"
+        - cell "6/21/2025"
+        - cell "0"
+        - cell "$0.00"
+        - cell
+        - cell
+        - cell
+      - row "Select this row C Corine Bartoletti 6/21/2025 0 $0.00":
+        - cell "Select this row":
+          - checkbox
+        - cell "C Corine Bartoletti":
+          - link "C Corine Bartoletti":
+            - /url: "#/customers/625"
+        - cell "6/21/2025"
+        - cell "0"
+        - cell "$0.00"
+        - cell
+        - cell
+        - cell
+      - row "Select this row G Griffin Wiza 6/20/2025 0 $0.00":
+        - cell "Select this row":
+          - checkbox
+        - cell "G Griffin Wiza":
+          - link "G Griffin Wiza":
+            - /url: "#/customers/694"
+        - cell "6/20/2025"
+        - cell "0"
+        - cell "$0.00"
+        - cell
+        - cell
+        - cell
+      - row "Select this row Raphaelle Rempel Raphaelle Rempel 6/20/2025 1 $46.66 6/20/2025, 10:19:24 AM Ordered once Regular":
+        - cell "Select this row":
+          - checkbox
+        - cell "Raphaelle Rempel Raphaelle Rempel":
+          - link "Raphaelle Rempel Raphaelle Rempel":
+            - /url: "#/customers/355"
+            - img "Raphaelle Rempel"
+            - text: Raphaelle Rempel
+        - cell "6/20/2025"
+        - cell "1"
+        - cell "$46.66"
+        - cell "6/20/2025, 10:19:24 AM"
+        - cell
+        - cell "Ordered once Regular"
+      - row "Select this row C Carson Graham 6/20/2025 0 $0.00":
+        - cell "Select this row":
+          - checkbox
+        - cell "C Carson Graham":
+          - link "C Carson Graham":
+            - /url: "#/customers/880"
+        - cell "6/20/2025"
+        - cell "0"
+        - cell "$0.00"
+        - cell
+        - cell
+        - cell
+      - row "Select this row M Madelynn Steuber 6/20/2025 0 $0.00":
+        - cell "Select this row":
+          - checkbox
+        - cell "M Madelynn Steuber":
+          - link "M Madelynn Steuber":
+            - /url: "#/customers/534"
+        - cell "6/20/2025"
+        - cell "0"
+        - cell "$0.00"
+        - cell
+        - cell
+        - cell
+      - row "Select this row K Katharina Fisher 6/20/2025 0 $0.00 Regular":
+        - cell "Select this row":
+          - checkbox
+        - cell "K Katharina Fisher":
+          - link "K Katharina Fisher":
+            - /url: "#/customers/200"
+        - cell "6/20/2025"
+        - cell "0"
+        - cell "$0.00"
+        - cell
+        - cell
+        - cell "Regular"
+      - row "Select this row A Alivia Kemmer 6/20/2025 0 $0.00 Regular":
+        - cell "Select this row":
+          - checkbox
+        - cell "A Alivia Kemmer":
+          - link "A Alivia Kemmer":
+            - /url: "#/customers/198"
+        - cell "6/20/2025"
+        - cell "0"
+        - cell "$0.00"
+        - cell
+        - cell
+        - cell "Regular"
+      - row "Select this row M Miller Smitham 6/20/2025 0 $0.00":
+        - cell "Select this row":
+          - checkbox
+        - cell "M Miller Smitham":
+          - link "M Miller Smitham":
+            - /url: "#/customers/285"
+        - cell "6/20/2025"
+        - cell "0"
+        - cell "$0.00"
+        - cell
+        - cell
+        - cell
+      - row "Select this row S Solon Weimann 6/20/2025 0 $0.00":
+        - cell "Select this row":
+          - checkbox
+        - cell "S Solon Weimann":
+          - link "S Solon Weimann":
+            - /url: "#/customers/817"
+        - cell "6/20/2025"
+        - cell "0"
+        - cell "$0.00"
+        - cell
+        - cell
+        - cell
+      - row "Select this row Hadley Jones Hadley Jones 6/20/2025 4 $267.21 1/7/2025, 5:32:38 PM Reviewer":
+        - cell "Select this row":
+          - checkbox
+        - cell "Hadley Jones Hadley Jones":
+          - link "Hadley Jones Hadley Jones":
+            - /url: "#/customers/469"
+            - img "Hadley Jones"
+            - text: Hadley Jones
+        - cell "6/20/2025"
+        - cell "4"
+        - cell "$267.21"
+        - cell "1/7/2025, 5:32:38 PM"
+        - cell
+        - cell "Reviewer"
+      - row "Select this row Marcelina Osinski Marcelina Osinski 6/20/2025 3 $380.20 5/20/2025, 3:43:08 PM Reviewer":
+        - cell "Select this row":
+          - checkbox
+        - cell "Marcelina Osinski Marcelina Osinski":
+          - link "Marcelina Osinski Marcelina Osinski":
+            - /url: "#/customers/296"
+            - img "Marcelina Osinski"
+            - text: Marcelina Osinski
+        - cell "6/20/2025"
+        - cell "3"
+        - cell "$380.20"
+        - cell "5/20/2025, 3:43:08 PM"
+        - cell
+        - cell "Reviewer"
+      - row "Select this row V Vickie Walter 6/20/2025 0 $0.00 Regular":
+        - cell "Select this row":
+          - checkbox
+        - cell "V Vickie Walter":
+          - link "V Vickie Walter":
+            - /url: "#/customers/562"
+        - cell "6/20/2025"
+        - cell "0"
+        - cell "$0.00"
+        - cell
+        - cell
+        - cell "Regular"
+      - row "Select this row B Brenden Murphy 6/20/2025 0 $0.00":
+        - cell "Select this row":
+          - checkbox
+        - cell "B Brenden Murphy":
+          - link "B Brenden Murphy":
+            - /url: "#/customers/31"
+        - cell "6/20/2025"
+        - cell "0"
+        - cell "$0.00"
+        - cell
+        - cell
+        - cell
+      - row "Select this row J Julien Schmeler 6/20/2025 0 $0.00":
+        - cell "Select this row":
+          - checkbox
+        - cell "J Julien Schmeler":
+          - link "J Julien Schmeler":
+            - /url: "#/customers/548"
+        - cell "6/20/2025"
+        - cell "0"
+        - cell "$0.00"
+        - cell
+        - cell
+        - cell
+      - row "Select this row M Maegan Morar 6/20/2025 0 $0.00":
+        - cell "Select this row":
+          - checkbox
+        - cell "M Maegan Morar":
+          - link "M Maegan Morar":
+            - /url: "#/customers/18"
+        - cell "6/20/2025"
+        - cell "0"
+        - cell "$0.00"
+        - cell
+        - cell
+        - cell
+  - paragraph: "Rows per page:"
+  - 'combobox "Rows per page: 25"': "25"
+  - paragraph: 1-25 of 900
+  - navigation "pagination navigation":
+    - list:
+      - listitem:
+        - button "Go to previous page" [disabled]
+      - listitem:
+        - button "Page 1": "1"
+      - listitem:
+        - button "Go to page 2": "2"
+      - listitem:
+        - button "Go to page 3": "3"
+      - listitem:
+        - button "Go to page 4": "4"
+      - listitem:
+        - button "Go to page 5": "5"
+      - listitem: …
+      - listitem:
+        - button "Go to page 36": "36"
+      - listitem:
+        - button "Go to next page"
+  - textbox "Search"
+  - text: Saved queries
+  - list
+  - text: Last visited
+  - list:
+    - listitem:
+      - button "Today"
+    - listitem:
+      - button "This week"
+    - listitem:
+      - button "Last week"
+    - listitem:
+      - button "This month"
+    - listitem:
+      - button "Last month"
+    - listitem:
+      - button "Earlier"
+  - text: Has ordered
+  - list:
+    - listitem:
+      - button "Yes"
+    - listitem:
+      - button "No"
+  - text: Has newsletter
+  - list:
+    - listitem:
+      - button "Yes"
+    - listitem:
+      - button "No"
+  - text: Segment
+  - list:
+    - listitem:
+      - button "Compulsive"
+    - listitem:
+      - button "Collector"
+    - listitem:
+      - button "Ordered once"
+    - listitem:
+      - button "Regular"
+    - listitem:
+      - button "Returns"
+    - listitem:
+      - button "Reviewer"
+```

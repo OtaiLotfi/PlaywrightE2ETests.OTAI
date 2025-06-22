@@ -1,0 +1,76 @@
+# Page snapshot
+
+```yaml
+- button "Skip to content"
+- banner:
+  - button "Close menu"
+  - heading "L Lotfi OTAI" [level=6]
+  - img
+  - button "English"
+  - button "Change Theme"
+  - button "Toggle light/dark mode"
+  - button "Refresh"
+  - button "Profile":
+    - img "Jane Doe"
+    - text: Jane Doe
+- main:
+  - menuitem "Dashboard"
+  - menuitem "Sales":
+    - paragraph: Sales
+  - menuitem "Orders"
+  - menuitem "Invoices"
+  - menuitem "Catalog":
+    - paragraph: Catalog
+  - menuitem "Posters"
+  - menuitem "Categories"
+  - menuitem "Customers":
+    - paragraph: Customers
+  - menuitem "Customers"
+  - menuitem "Segments"
+  - menuitem "Reviews"
+  - heading "Identity" [level=6]
+  - text: First name
+  - textbox "First name": Lotfi
+  - paragraph
+  - text: Last name
+  - textbox "Last name": OTAI
+  - paragraph
+  - text: Email
+  - textbox "Email": lotfiotai@test.com
+  - paragraph
+  - text: Birthday
+  - textbox "Birthday": 2025-05-05
+  - heading "Address" [level=6]
+  - text: Address
+  - textbox "Address": Centre Urbain Nord
+  - text: City
+  - textbox "City": Tunis
+  - text: State
+  - textbox "State": Tunis Governorate
+  - text: Zipcode
+  - textbox "Zipcode": "1082"
+  - heading "Change Password" [level=6]
+  - text: Password
+  - textbox "Password": PlaywrightLotfiDemo
+  - button "Show password"
+  - paragraph
+  - text: Confirm password
+  - textbox "Confirm password": PlaywrightLotfiDemo
+  - button "Show password"
+  - paragraph
+  - heading "Stats" [level=6]
+  - text: Segments
+  - combobox "Segments"
+  - paragraph
+  - text: Has newsletter
+  - combobox "Has newsletter No": "No"
+  - paragraph
+  - toolbar:
+    - button "Save" [disabled]
+    - button "Delete"
+  - heading "History" [level=6]
+  - paragraph: First seen
+  - text: 6/22/2025
+  - paragraph: Last seen
+  - text: 6/22/2025
+```
