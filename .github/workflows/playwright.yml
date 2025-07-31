@@ -63,5 +63,21 @@ jobs:
           name: allure-results
           path: allure-results/
 
+      - name: Install Java and Allure CLI
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openjdk-11-jre-headless
+          npm install -g allure-commandline --save-dev
+
+      - name: Generate Allure Report
+        run: |
+          allure generate allure-results --clean -o allure-report
+
+      - name: Upload Allure Report HTML
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: allure-report/
+
       - name: Display downloaded report files
         run: ls -R
