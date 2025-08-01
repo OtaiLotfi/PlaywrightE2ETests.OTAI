@@ -33,7 +33,7 @@ jobs:
           APP_USERNAME: ${{ secrets.APP_USERNAME }}
           APP_PASSWORD: ${{ secrets.APP_PASSWORD }}
         run: |
-          npx nyc --reporter=lcov --report-dir=coverage npx playwright test
+          npx nyc --reporter=lcov --report-dir=coverage --require ts-node/register npx playwright test
 
       - name: Upload Playwright Test Report
         if: always()
