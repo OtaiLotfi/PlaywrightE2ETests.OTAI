@@ -11,8 +11,9 @@ RUN npm ci
 
 # Copy only required files and folders
 COPY playwright.config.ts ./
-COPY utils/ ./utils/
-COPY tests/ ./tests/
+COPY otaiE2ETests/utils/ ./utils/
+COPY otaiE2ETests/tests/ ./tests/
+COPY otaiE2ETests/ ./otaiE2ETests/
 COPY run-tests.sh ./  # Only if you use this script to run tests
 
 # Set default command to run Playwright tests
