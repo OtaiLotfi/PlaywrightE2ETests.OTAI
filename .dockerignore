@@ -1,4 +1,36 @@
+# Dependencies
 node_modules
+
+# Git
 .git
-playwright-report
+.gitignore
+
+# Environment variables and secrets
 .env
+.env.local
+.env.*.local
+
+# Playwright and test output
+playwright-report
+allure-report
+allure-results
+test-results
+coverage
+
+# VSCode and editor configs
+.vscode
+.idea
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Docker itself
+Dockerfile
+.dockerignore
+
+# GitHub Actions (optional, if not needed in the image)
+.github
