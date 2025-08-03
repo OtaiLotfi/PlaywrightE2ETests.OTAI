@@ -1,31 +1,28 @@
-# Use the official Playwright Node.js 18 image
+# Use official Playwright Node.js base image
 FROM mcr.microsoft.com/playwright:v1.53.1-jammy
 
-# Set working directory
+# Define working directory
 WORKDIR /app
 
-# Copy package files with root ownership and restrictive permissions
-COPY --chown=root:root --chmod=444 package.json ./package.json
-COPY --chown=root:root --chmod=444 package-lock.json ./package-lock.json
+# Copy package files with strict permissions
+COPY --chown=root:root --chmod=444 package.json package-lock.json ./
 
-# Install dependencies (still as root)
+# Install dependencies
 RUN npm ci
 
-# Copy configuration file with root ownership and read-only permission
-COPY --chown=root:root --chmod=444 playwright.config.ts ./playwright.config.ts
+# Copy configuration file
+COPY --chown=root:root --chmod=444 playwright.config.ts ./
 
-# Copy test-related directories with root ownership and read-only permissions
-COPY --chown=root:root --chmod=555 otaiE2ETests/utils/ ./utils/
-COPY --chown=root:root --chmod=555 otaiE2ETests/tests/ ./tests/
+# Copy tests and utilities
 COPY --chown=root:root --chmod=555 otaiE2ETests/ ./otaiE2ETests/
 
-# Create writable directories for results and reports
-RUN mkdir -p /app/test-results /app/playwright-report \
-  && chown -R pwuser:pwuser /app/test-results /app/playwright-report \
-  && chmod 755 /app/test-results /app/playwright-report
+# Ensure required directories for reports exist
+RUN mkdir -p /app/test-results /app/playwright-report && \
+    chown -R pwuser:pwuser /app/test-results /app/playwright-report && \
+    chmod 755 /app/test-results /app/playwright-report
 
-# Switch to the non-root user provided by Playwright for execution
+# Switch to secure non-root user provided by Playwright
 USER pwuser
 
-# Default command to run Playwright tests
+# Set default command to run tests
 CMD ["npx", "playwright", "test"]
