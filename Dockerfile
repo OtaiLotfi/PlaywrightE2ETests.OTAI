@@ -16,10 +16,9 @@ COPY --chown=root:root --chmod=444 playwright.config.ts ./
 # Copy tests and utilities with read/exec-only permissions
 COPY --chown=root:root --chmod=555 otaiE2ETests/ ./otaiE2ETests/
 
-# Create and secure test-results and report directories
+# Create and secure test-results and report directories with broad permissions to avoid write issues
 RUN mkdir -p /app/test-results /app/playwright-report && \
-    chown -R pwuser:pwuser /app/test-results /app/playwright-report && \
-    chmod -R 755 /app/test-results /app/playwright-report
+    chmod -R 777 /app/test-results /app/playwright-report
 
 # Switch to the non-root user for better security
 USER pwuser
