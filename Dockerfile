@@ -19,8 +19,10 @@ COPY --chown=root:root --chmod=555 otaiE2ETests/utils/ ./utils/
 COPY --chown=root:root --chmod=555 otaiE2ETests/tests/ ./tests/
 COPY --chown=root:root --chmod=555 otaiE2ETests/ ./otaiE2ETests/
 
-# Create the test-results directory owned by pwuser with write permission
-RUN mkdir -p /app/test-results && chown -R pwuser:pwuser /app/test-results && chmod 755 /app/test-results
+# Create writable directories for results and reports
+RUN mkdir -p /app/test-results /app/playwright-report \
+  && chown -R pwuser:pwuser /app/test-results /app/playwright-report \
+  && chmod 755 /app/test-results /app/playwright-report
 
 # Switch to the non-root user provided by Playwright for execution
 USER pwuser
