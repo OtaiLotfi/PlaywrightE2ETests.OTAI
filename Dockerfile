@@ -7,8 +7,8 @@ WORKDIR /app
 # Copy package files with secure read-only permissions for root
 COPY --chown=root:root --chmod=444 package.json package-lock.json ./
 
-# Install dependencies
-RUN npm ci
+# Install dependencies securely (skip lifecycle scripts for safety)
+RUN npm ci --ignore-scripts
 
 # Copy config file securely
 COPY --chown=root:root --chmod=444 playwright.config.ts ./
