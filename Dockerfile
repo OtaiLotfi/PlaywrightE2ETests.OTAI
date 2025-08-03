@@ -11,18 +11,23 @@ USER pwuser
 # Copy package files and install dependencies
 COPY --chown=pwuser:pwuser package.json ./
 COPY --chown=pwuser:pwuser package-lock.json ./
-RUN npm ci
+RUN chmod 444 package.json package-lock.json && npm ci
 
-# Copy only required files and folders with correct ownership
+# Copy configuration file
 COPY --chown=pwuser:pwuser playwright.config.ts ./
+RUN chmod 444 playwright.config.ts
+
+# Copy test-related directories and make them read-only
 COPY --chown=pwuser:pwuser otaiE2ETests/utils/ ./utils/
 COPY --chown=pwuser:pwuser otaiE2ETests/tests/ ./tests/
 COPY --chown=pwuser:pwuser otaiE2ETests/ ./otaiE2ETests/
-# COPY --chown=pwuser:pwuser run-tests.sh ./  # Uncomment if needed
 
-# Make files and directories read-only to satisfy SonarQube
-RUN chmod 444 package.json package-lock.json playwright.config.ts && \
-    chmod -R a-w ./utils ./tests ./otaiE2ETests
+# Remove write permissions from all copied directories recursively
+RUN chmod -R a-w ./utils ./tests ./otaiE2ETests
+
+# Uncomment if needed
+# COPY --chown=pwuser:pwuser run-tests.sh ./
+# RUN chmod 555 run-tests.sh
 
 # Default command to run Playwright tests
 CMD ["npx", "playwright", "test"]
