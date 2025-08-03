@@ -20,5 +20,9 @@ COPY --chown=pwuser:pwuser otaiE2ETests/tests/ ./tests/
 COPY --chown=pwuser:pwuser otaiE2ETests/ ./otaiE2ETests/
 # COPY --chown=pwuser:pwuser run-tests.sh ./  # Uncomment if needed
 
+# Make files and directories read-only to satisfy SonarQube
+RUN chmod 444 package.json package-lock.json playwright.config.ts && \
+    chmod -R a-w ./utils ./tests ./otaiE2ETests
+
 # Default command to run Playwright tests
 CMD ["npx", "playwright", "test"]
