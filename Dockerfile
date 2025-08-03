@@ -1,7 +1,7 @@
 # Use the official Playwright Node.js 18 image
 FROM mcr.microsoft.com/playwright:v1.53.1-jammy
 
-# Set working directory and ensure correct permissions
+# Set working directory
 WORKDIR /app
 
 # Copy package files with root ownership and restrictive permissions
@@ -19,8 +19,8 @@ COPY --chown=root:root --chmod=555 otaiE2ETests/utils/ ./utils/
 COPY --chown=root:root --chmod=555 otaiE2ETests/tests/ ./tests/
 COPY --chown=root:root --chmod=555 otaiE2ETests/ ./otaiE2ETests/
 
-# (Optional) Include and permission script
-# COPY --chown=root:root --chmod=555 run-tests.sh ./run-tests.sh
+# Create the test-results directory owned by pwuser with write permission
+RUN mkdir -p /app/test-results && chown -R pwuser:pwuser /app/test-results && chmod 755 /app/test-results
 
 # Switch to the non-root user provided by Playwright for execution
 USER pwuser

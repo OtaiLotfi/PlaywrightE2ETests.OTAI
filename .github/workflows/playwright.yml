@@ -27,6 +27,9 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Create local test-results directory for volume mounting
+        run: mkdir -p test-results
+
       - name: Build Docker image for Playwright
         run: docker build -t otai-playwright-tests .
 
@@ -40,6 +43,7 @@ jobs:
             -e APP_USERNAME=$APP_USERNAME \
             -e APP_PASSWORD=$APP_PASSWORD \
             -v ${{ github.workspace }}/playwright-report:/app/playwright-report \
+            -v ${{ github.workspace }}/test-results:/app/test-results \
             otai-playwright-tests
 
       - name: Upload Playwright Test Report
