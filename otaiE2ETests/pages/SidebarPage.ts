@@ -1,4 +1,4 @@
-import { expect, Page, Locator } from '@playwright/test';
+import {Locator } from '@playwright/test';
 import { BasePage } from './BasePage'; 
 import { getSidebarLocators } from '../utils/locators';
 
