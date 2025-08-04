@@ -1,8 +1,7 @@
-import { expect, Page, Locator } from '@playwright/test';
+import {Locator } from '@playwright/test';
 import { BasePage } from './BasePage'; 
 import { getCustomersLocators } from '../utils/locators';
 import { getSidebarLocators } from '../utils/locators';
-//import { sectionName } from '../utils/elementFinder';
 
 export class CustomersPage extends BasePage {
   readonly addCustomer: Locator;

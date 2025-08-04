@@ -1,4 +1,3 @@
-// utils/fixtures.ts
 import { test as baseTest } from '@playwright/test';
 import { LoginPage } from '../pages/LoginPage';
 import { SidebarPage } from '../pages/SidebarPage';
