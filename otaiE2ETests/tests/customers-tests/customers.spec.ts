@@ -1,8 +1,8 @@
-import { test, expect } from '../../utils/fixtures';
+import { test } from '../../utils/fixtures';
 import { appConfig } from '../../utils/config';
 import { popupText } from '../../utils/elementFinder';
 
-test.beforeEach(async ({ page, loginPage }) => {
+test.beforeEach(async ({ loginPage }) => {
     await loginPage.openApp(appConfig.url, loginPage.loginTextValue);
     await loginPage.loginWithCredentials(appConfig.credentials.username, appConfig.credentials.password);
     await loginPage.waitForVisibility(loginPage.invoicesHeader);
@@ -32,4 +32,5 @@ test('Create A Customer', async ({ sidebarPage, customersPage, page }) => {
     await customersPage.search('Lotfi');
     await customersPage.waitForTextVisibility('Lotfi OTAI');
     await page.waitForTimeout(10000);
-}); 
+});
+ 
