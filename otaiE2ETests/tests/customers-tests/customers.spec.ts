@@ -32,4 +32,4 @@ test('Create A Customer', async ({ sidebarPage, customersPage, page }) => {
     await customersPage.search('Lotfi');
     await customersPage.waitForTextVisibility('Lotfi OTAI');
     await page.waitForTimeout(10000);
-});
+}); 
