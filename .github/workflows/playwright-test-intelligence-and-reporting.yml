@@ -1,0 +1,166 @@
+name: Playwright Test Intelligence & Reporting
+
+on:
+  push:
+    branches: [Playwright-Test-Intelligence-and-Reporting]
+  pull_request:
+    branches: [Playwright-Test-Intelligence-and-Reporting]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  e2e-tests:
+    name: Run E2E Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Login to GitHub Docker registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create output directories
+        run: |
+          mkdir -p test-results playwright-report
+          chmod 777 test-results playwright-report
+
+      - name: Build Playwright Docker image
+        run: docker build -t otai/playwright-tests .
+
+      - name: Run Playwright E2E Tests
+        env:
+          APP_USERNAME: ${{ secrets.APP_USERNAME }}
+          APP_PASSWORD: ${{ secrets.APP_PASSWORD }}
+        run: |
+          docker run \
+            --rm \
+            --user root \
+            -e APP_USERNAME=$APP_USERNAME \
+            -e APP_PASSWORD=$APP_PASSWORD \
+            -v ${{ github.workspace }}/playwright-report:/app/playwright-report \
+            -v ${{ github.workspace }}/test-results:/app/test-results \
+            otai/playwright-tests
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: test-results/
+
+      - name: Upload Playwright HTML report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: playwright-report/
+
+  generate-dashboard:
+    name: Generate Dashboard Report
+    needs: e2e-tests
+    if: always()
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Download test results
+        uses: actions/download-artifact@v4
+        with:
+          name: test-results
+          path: test-results/
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Generate dashboard report
+        env:
+          ENGINEERNAME: ${{ secrets.ENGINEERNAME }}
+          DASHBOARDPASSWORD: ${{ secrets.DASHBOARDPASSWORD }}
+        run: python dashboard-reports/generate_report.py test-results/results.json
+
+      - name: Upload dashboard artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-intelligence-dashboard
+          path: dashboard-reports/
+
+  deploy-dashboard:
+    name: Deploy Dashboard to GitHub Pages
+    needs: generate-dashboard
+    if: always()
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Download dashboard artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: test-intelligence-dashboard
+          path: dashboard/
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload to GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dashboard/
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Print dashboard URL
+        run: |
+          echo "## Dashboard Deployed" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Access the **Playwright Test Intelligence & Reporting** dashboard:" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "${{ steps.deployment.outputs.page_url }}" >> $GITHUB_STEP_SUMMARY
+
+  sonarcloud-analysis:
+    name: SonarCloud Analysis
+    needs: e2e-tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js 18
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@master
+        with:
+          projectBaseDir: .
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
