@@ -87,6 +87,13 @@ jobs:
           name: test-results
           path: test-results/
 
+      - name: Restore run history from deployed dashboard
+        run: |
+          PAGES_URL="https://otailotfi.github.io/PlaywrightE2ETests.OTAI/run_history.json"
+          echo "Fetching existing run history from $PAGES_URL"
+          curl -sSf "$PAGES_URL" -o dashboard-reports/run_history.json || echo "[]" > dashboard-reports/run_history.json
+          echo "Run history entries: $(cat dashboard-reports/run_history.json | python3 -c 'import sys,json; print(len(json.load(sys.stdin)))' 2>/dev/null || echo 0)"
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
