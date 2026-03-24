@@ -9,7 +9,7 @@ test.beforeEach(async ({ page, loginPage }) => {
 test('Valid login', async ({ loginPage }) => {
     await loginPage.loginWithCredentials(appConfig.credentials.username, appConfig.credentials.password);
     await loginPage.waitForVisibility(loginPage.invoicesHeader);
-    console.log('Welcome to Playwright, Lotfi!'); 
+    //console.log('Welcome to Playwright, Lotfi!'); 
 });
 
 test('Invalid login', async ({ loginPage }) => {

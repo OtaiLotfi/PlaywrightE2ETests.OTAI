@@ -25,10 +25,10 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Create test-results and playwright-report directories with open permissions
+      - name: Create test-results and playwright-report directories
         run: |
           mkdir -p test-results playwright-report
-          chmod 777 test-results playwright-report
+          chmod 755 test-results playwright-report
 
       - name: Build Playwright Docker image
         run: docker build -t otai/playwright-tests .

@@ -15,5 +15,6 @@ export default defineConfig({
     ['list'],
     ['html', { open: 'never' }],
     ['allure-playwright'],
+    ['json', { outputFile: 'test-results/results.json' }],
   ],
 });
