@@ -33,3 +33,12 @@ coverage/
 # IDEs
 .idea/
 *.iml
+
+# Dashboard generated/reference files
+dashboard-reports/report_data.json
+dashboard-reports/run_history.json
+dashboard-reports/segments-page.png
+dashboard-reports/segments-ui-elements-report.txt
+
+# Temporarily ignored tests
+otaiE2ETests/tests/customers-tests/segments.spec.ts
